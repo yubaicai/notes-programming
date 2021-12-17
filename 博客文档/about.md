@@ -9,7 +9,7 @@
 
 -   语言：Java、JavaScript、Golang
 -   数据库：MySQL、 Redis、 Oracle
--   开发框架：Spring,、Spring Boot,、MyBatis、JQuery、Bootstrap
+-   开发框架：Spring,、Spring Boot,、MyBatis、JQuery、Bootstrap，Vue，Element-UI
 -   分布式：Docker
 -   构建工具： Maven、Tomcat
 -   环境： Linux、 Git、Intellij IDEA

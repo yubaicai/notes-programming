@@ -200,7 +200,7 @@ INSERT INTO `user`(`id`,`name`,`pwd`) VALUES
            //使用Mybatis第一步：获取sqlSessionFactory对象
            String resource = "mybatis-config.xml";
            InputStream inputStream = Resources.getResourceAsStream(resource);
-           SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+           SqlSessionFactory sqlSessionFactory = new 	  SqlSessionFactoryBuilder().build(inputStream);
        } catch (IOException e) {
            e.printStackTrace();
        }

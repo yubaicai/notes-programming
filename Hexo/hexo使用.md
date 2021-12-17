@@ -1,4 +1,4 @@
-```
+```shell
 hexo new "postName" #新建文章
 hexo new page "pageName" #新建页面
 hexo generate #生成静态页面至public目录
@@ -8,7 +8,7 @@ hexo help  # 查看帮助
 hexo version  #查看Hexo的版本
 ```
 
-```text
+```shell
 hexo new "name"       # 新建文章
 hexo new page "name"  # 新建页面
 hexo g                # 生成页面

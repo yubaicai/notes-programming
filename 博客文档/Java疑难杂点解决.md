@@ -289,13 +289,10 @@ System.out.println(arrayToList(myArray).getClass());//class java.util.ArrayList
 
 **2. 最简便的方法(推荐)**
 
-List<String> l1 = Lists.newArrayList(anotherListOrCollection); // from collection List<String> l2 = Lists.newArrayList(aStringArray); // from array List<String> l3 = Lists.newArrayList("or", "string", "elements"); // from varargs
-来源: JavaGuide
-文章作者: SnailClimb
-文章链接: [https://snailclimb.gitee.io/2019/08/20/java/java%E5%9F%BA%E7%A1%80/Java%E7%96%91%E9%9A%BE%E7%82%B9/](https://snailclimb.gitee.io/2019/08/20/java/java基础/Java疑难点/)
-本文章著作权归作者所有，任何形式的转载都请注明出处。
-
 ```java
+List<String> l1 = Lists.newArrayList(anotherListOrCollection); // from collection 
+List<String> l2 = Lists.newArrayList(aStringArray); // from array 
+List<String> l3 = Lists.newArrayList("or", "string", "elements"); // from varargs
 List list = new ArrayList<>(Arrays.asList("a", "b", "c"))
 ```
 
