@@ -1,14 +1,4 @@
----
-typora-copy-images-to: images
----
-
-[TOC]
-
-
-
 # JavaWeb
-
-java	web
 
 ## 1.基本概念
 

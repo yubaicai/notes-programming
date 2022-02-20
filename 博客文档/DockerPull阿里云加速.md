@@ -7,9 +7,9 @@
 -   打开https://cr.console.aliyun.com/?spm=5176.2020520001.0.0.7QuK43#/imageList ，第一次需要设置密码
 -   点击https://cr.console.aliyun.com/?spm=5176.2020520001.0.0.7QuK43#/accelerator ，这里有一个镜像加速器网址，一种办法是照操作文档操作设置就行，另一种是下面的。
 -   我使用的Portainer管理的Docker,在Registries添加刚刚的加速器网址
-    ![image.png](https://gitee.com/rudecode/blog-image/raw/master/images/202112140101618.png)
+    ![image.png](https://gitee.com/yubaicai/blog-image/raw/master/images/202112140101618.png)
 -   以后下载镜像可以在界面上pull，选择刚刚添加的镜像源即可。
-    ![image.png](https://gitee.com/rudecode/blog-image/raw/master/images/202112140101108.png)
+    ![image.png](https://gitee.com/yubaicai/blog-image/raw/master/images/202112140101108.png)
 
 ### 方法2
 

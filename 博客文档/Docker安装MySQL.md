@@ -8,7 +8,7 @@
 docker pull mysql
 ```
 
-![拉取MySQL最新镜像](https://gitee.com/rudecode/blog-image/raw/master/images/202112140018295.png)
+![拉取MySQL最新镜像](https://gitee.com/yubaicai/blog-image/raw/master/images/202112140018295.png)
 
 注意：这里拉取的是`tag`为`latest`的镜像，如果我们想拉取指定版本的镜像，可以使用下面的指令。
 
@@ -31,7 +31,7 @@ docker run -d --name mysql-dev -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 mysql
 
 这里我们启动了一个名为 `mysql-dev` 的 MySQL 镜像，暴露的端口为`3306`，默认账号密码为： `root:123456`
 
-![运行MySQL镜像](https://gitee.com/rudecode/blog-image/raw/master/images/202112140018220.png)
+![运行MySQL镜像](https://gitee.com/yubaicai/blog-image/raw/master/images/202112140018220.png)
 
 ### 进入MySQL 容器验证
 
@@ -39,7 +39,7 @@ docker run -d --name mysql-dev -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 mysql
 docker exec -it mysql-dev /bin/bash
 ```
 
-![进入MySQL容器并登录](https://gitee.com/rudecode/blog-image/raw/master/images/202112140018867.png)
+![进入MySQL容器并登录](https://gitee.com/yubaicai/blog-image/raw/master/images/202112140018867.png)
 
 上图中，我进入了镜像名为`mysql-dev`的MySQL容器。并通过启动容器的账号密码进行了登录。至此，MySQL 已经启动了，我们可以使用数据库工具（DataGrip、Navicat）来连接这个MySQL。
 
@@ -85,7 +85,7 @@ touch my.cnf  #创建mysql配置文件my.cnf
 vim my.cnf
 ```
 
-![image-20200623152222384](https://gitee.com/rudecode/blog-image/raw/master/images/202112140018460.png)
+![image-20200623152222384](https://gitee.com/yubaicai/blog-image/raw/master/images/202112140018460.png)
 
 在 `my.cnf` 中写入下面的数据：
 
@@ -134,10 +134,10 @@ docker run -p 3306:3306  --restart=always --privileged=true --name mysql-dev -v 
 -   –privileged=true 使用该参数，container内的root拥有真正的root权限
 -   对于已经运行但没设置随docker服务的启动而启动容器的可以执行命令 docker update –restart=always 容器名
 
-![启动容器](https://gitee.com/rudecode/blog-image/raw/master/images/202112140018847.png)
+![启动容器](https://gitee.com/yubaicai/blog-image/raw/master/images/202112140018847.png)
 
 我们来看看 `/data/mysql/data`目录下面是否有文件：
 
-![image-20200623153430659](https://gitee.com/rudecode/blog-image/raw/master/images/202112140018787.png)
+![image-20200623153430659](https://gitee.com/yubaicai/blog-image/raw/master/images/202112140018787.png)
 
 可以看到，这么目录下面一句存在了指定文件且时间也正确，也就是说我们外挂成功了。

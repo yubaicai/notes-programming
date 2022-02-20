@@ -68,7 +68,7 @@
     ```
 
     `String`类型是`Redis`最基本的数据类型，而且是二进制的十分安全，`String`类型可以包含任何数据，一个键可以存储`512MB`
-    <img src="https://gitee.com/rudecode/blog-image/raw/master/images/QQ%E5%9B%BE%E7%89%8720211121095230.png" alt="Get操作" style="zoom:50%;" />
+    <img src="https://gitee.com/yubaicai/blog-image/raw/master/images/QQ%E5%9B%BE%E7%89%8720211121095230.png" alt="Get操作" style="zoom:50%;" />
 
 1.  Hash 哈希
 
@@ -77,7 +77,7 @@
     HGETALL：对象名	
     ```
 
-    HASH是一个键值对集合，特别适用于存储对象<img src="https://gitee.com/rudecode/blog-image/raw/master/images/QQ%E5%9B%BE%E7%89%8720211121095235.png" alt="Hash操作" style="zoom:50%;" />
+    HASH是一个键值对集合，特别适用于存储对象<img src="https://gitee.com/yubaicai/blog-image/raw/master/images/QQ%E5%9B%BE%E7%89%8720211121095235.png" alt="Hash操作" style="zoom:50%;" />
 
 1.  List 集合
 
@@ -89,7 +89,7 @@
 
     List 是字符串列表，按照插入顺序排序
 
-    <img src="https://gitee.com/rudecode/blog-image/raw/master/images/QQ%E5%9B%BE%E7%89%8720211121095240.png" alt="List设置操作" style="zoom:50%;" /><img src="https://gitee.com/rudecode/blog-image/raw/master/images/QQ%E5%9B%BE%E7%89%8720211121094806.jpg" alt="Redis中List操作" style="zoom: 50%;" />
+    <img src="https://gitee.com/yubaicai/blog-image/raw/master/images/QQ%E5%9B%BE%E7%89%8720211121095240.png" alt="List设置操作" style="zoom:50%;" /><img src="https://gitee.com/yubaicai/blog-image/raw/master/images/QQ%E5%9B%BE%E7%89%8720211121094806.jpg" alt="Redis中List操作" style="zoom: 50%;" />
 
 1.  Set集合
 
@@ -99,7 +99,7 @@
     smembers	nameSet 	--获取
     ```
 
-    Set是String类型的无序列表，每一个成员都是唯一的，意味这不可能出现重复的数据<img src="https://gitee.com/rudecode/blog-image/raw/master/images/Set.png" alt="Set" style="zoom:50%;" />
+    Set是String类型的无序列表，每一个成员都是唯一的，意味这不可能出现重复的数据<img src="https://gitee.com/yubaicai/blog-image/raw/master/images/Set.png" alt="Set" style="zoom:50%;" />
 
 1.  Zset集合
 
@@ -109,7 +109,7 @@
     ZRANGE	userSet	0 1 		--获取(下标)
     ```
 
-    ZSET集合是String类型的集合，且不允许有重复的成员，不同的是每一个元素都会关联一个`double`类型的分数来进行集合中的成员大小排序，并且分数可以重复<img src="https://gitee.com/rudecode/blog-image/raw/master/images/Zset%E9%9B%86%E5%90%88%E6%93%8D%E4%BD%9C.png" alt="Zset集合操作" style="zoom:50%;" />
+    ZSET集合是String类型的集合，且不允许有重复的成员，不同的是每一个元素都会关联一个`double`类型的分数来进行集合中的成员大小排序，并且分数可以重复<img src="https://gitee.com/yubaicai/blog-image/raw/master/images/Zset%E9%9B%86%E5%90%88%E6%93%8D%E4%BD%9C.png" alt="Zset集合操作" style="zoom:50%;" />
 
 1.  基本命令
 
@@ -117,13 +117,13 @@
 
         若key存在，则返回1 否则返回0
 
-        ![是否存在命令](https://gitee.com/rudecode/blog-image/raw/master/images/202111211908758.png)
+        ![是否存在命令](https://gitee.com/yubaicai/blog-image/raw/master/images/202111211908758.png)
 
     1.  删除：`DEL keyName keyName ...`
 
         返回的是被删除的数量
 
-        ![image-20211121190940638](https://gitee.com/rudecode/blog-image/raw/master/images/202111211909662.png)
+        ![image-20211121190940638](https://gitee.com/yubaicai/blog-image/raw/master/images/202111211909662.png)
 
     1.  设置过期时间
 

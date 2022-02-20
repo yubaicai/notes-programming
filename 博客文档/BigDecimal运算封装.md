@@ -35,7 +35,7 @@ System.out.println(a == b);// false
 
 《阿里巴巴 Java 开发手册》中提到：**浮点数之间的等值判断，基本数据类型不能用==来比较，包装数据类型不能用 equals 来判断。**
 
-![图片](https://gitee.com/rudecode/blog-image/raw/master/images/202112161353832.webp)
+![图片](https://gitee.com/yubaicai/blog-image/raw/master/images/202112161353832.webp)
 
 具体原因我们在上面已经详细介绍了，这里就不多提了，我们下面直接上实例：
 
@@ -137,7 +137,7 @@ System.out.println(n);// 1.255
 
 《阿里巴巴 Java 开发手册》对这部分内容也有提到，如下图所示。
 
-![图片](https://gitee.com/rudecode/blog-image/raw/master/images/202112161353153.webp)
+![图片](https://gitee.com/yubaicai/blog-image/raw/master/images/202112161353153.webp)
 
 ## BigDecimal 工具类分享
 
